@@ -18,7 +18,7 @@ env('latest_commit_id', function () {
 /**
  * Send notification to Bugsnag
  */
-task('bugsnag:notification', function () {
-    run('curl -d "apiKey={{bugsnag_api_key}}&branch={{branch}}&repository={{repository}}&revision={{latest_commit_id}}" http://notify.bugsnag.com/deploy');
-})->desc('Send deployment');
+task('bugsnag:notification', function () {	
+    run('curl -d "apiKey={{bugsnag_api_key}}&branch={{branch}}&revision={{latest_commit_id}}" http://notify.bugsnag.com/deploy');
+})->desc('Send deployment notification to Bugsnag');
 
