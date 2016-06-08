@@ -10,11 +10,11 @@
  */
 task('php-fpm:restart', function () {
     run('service php-fpm restart');
-})->desc('Restarting php-fpm processe');
+})->desc('Restarting php-fpm process');
 
 /**
  * Reload php-fpm
  */
 task('php-fpm:reload', function () {
     run('service php-fpm reload');
-})->desc('Reloading php-fpm processe');
+})->desc('Reloading php-fpm process');
